@@ -6,7 +6,7 @@ module.exports = {
     entry: path.resolve(__dirname, 'src/index.js'),
     output: {
         path: path.resolve(__dirname, 'output'),
-        filename: 'bundle.js'
+        filename: '[name].js'
     },
     resolve: {
         extensions: ['.js', '.jsx']
@@ -20,8 +20,8 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
+                test: /\.s[ac]ss$/i, //test: /\.css$/i,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
             }
         ]
     },
