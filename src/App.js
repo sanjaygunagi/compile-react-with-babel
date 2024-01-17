@@ -1,8 +1,9 @@
 import React from "react";
+import './app.css';
 
 const  App = () => {
-   return ( <div>
-        <h1>App Hi Hello Hi Check </h1>
+   return ( <div className="app">
+        <h1 style={{color: 'green'}}>App Hi Hello Hi Check Test</h1>
     </div>)
 }
 
